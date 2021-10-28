@@ -1,0 +1,5016 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/var"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/var">
+    <Prefix name="" IRI="https://w3id.org/var"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="var" IRI="https://w3id.org/var#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="w3id" IRI="https://w3id.org/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+        <Literal>2018/07/13</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal>Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;
+Patricia Casla &lt;mailto:patricia.casla@tekniker.es&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+        <Literal xml:lang="en">The VAR Ontology enables the data exchange between different agents in assembly scenarios to enable adaptive, interactive, assistive and collaborative workplaces.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+        <Literal>2021/10/28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+        <Literal>2021/10/28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+        <Literal>VAR Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>var</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <IRI></IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClassProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClassProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#TemporalThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ActionOverObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ActionOverPoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArmLength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BasicAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CommandEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConfigurationMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ControlProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ControlProgramParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DigitalContentPreferences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnabledProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EquipmentEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExecutionMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExecutionModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Expertise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FeedbackAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FunctionalCapabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HeadMountedDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IdentificationEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndustrialRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndustrialRobotParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InitializationMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InteractionDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LightIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LocationVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MaintenanceProtocolDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MethodParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MobileRobot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ModeAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NavigationMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NotificationEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OPC-UAServer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OnJobAssistanceEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OperationVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OutputParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ParameterVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProcessEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProcessSegmentParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProgramAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProgramRequiringWorkingArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProportionalWageCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProtocolSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="QualityEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReachParameterVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResumingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Robot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RoboticProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SmartTool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SmartToolParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Smartphone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Speaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StatusAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StatusVariable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StoppingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TraceError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TraceProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TraceProtocolSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkingArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkingPiece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="applicableToWorkingElem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="canUse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentControlProgram"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentPSExecuting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentPSReady"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentPSStandBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="currentProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="executedByExecModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="executes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="executesAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="executesProcessParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="followsProductProductionRule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="generatesAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAccessTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAfterEndDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAfterFailDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAnnotationRelated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBinaryRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEffectOnObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEffectOnPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquipmentClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquipmentClassProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquipmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEquipmentSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasError"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFifithOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFifthInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFirstInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFirstOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFirstSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFourthInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFourthOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInteractionDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaterialClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaterialSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNotFollowDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNotInparallelDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPersonProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPersonnelClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPersonnelSegmentSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPossibleParallelDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPotentialInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProcessParameterSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProductSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProtocolSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReady"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRelatedInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSecondInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSecondOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasThirdInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasThirdOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasVariable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasWorkingArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isActivatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAssembledFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isBeingUsedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCurrentControlProgramFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCurrentPSFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCurrentParameterFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDefinedByProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDefinedByProcessTraceTree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isExecuting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGroupingOfEquipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGroupingOfMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGroupingOfPeople"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isInputFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isLoggedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMadeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isNext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isNextConditional"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isNotifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPartOfWorkingPiece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPotentialInputFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPrevious"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isReadyFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSolvedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSubscribedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isTraceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isUsing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isUsingInteractionDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isValidFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iscurrentPSExecutingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iscurrentPSReadyFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="iscurrentPSStandByFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="lastCompleted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="propertyRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="relatedToProcessSegment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="aboutActor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="actualParameterValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="animationTrack"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="annotationId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="annualElectricityConsumptionStandBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="annualElectricityConsumptionWhileWorking"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="annualMaintenanceCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="contentSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="controlProgramId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="costPerSurfacePerMonth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="counter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="dataType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="destinationEquipmentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="distinguishColours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="documentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="documentationCounter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="economicUsefulLife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="electricityPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="emailAccount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="endTimestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="equipmentClassId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="equipmentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="equipmentLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="equipmentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="equipmentType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="errorId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="errorSolved"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="errorType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="eventType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="executionType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="expertiseLevelThreshold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="finished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="frame"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hoursPerShift"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="image"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="imageCounter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="implementation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="installationSurface"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="interactionDeviceId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="interestRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ip"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ipRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ipRangeEthernet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="ipRangeWifi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="jobOrderId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="jobOrderType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="loACognitive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="loAPhysical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="loadClass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="locationId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="machinePurchaseValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="machineSaleValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="marker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="materialClassId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="materialId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="methodId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="methodOrder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="model"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="model3DStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="notificationFormat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="notificationId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="notificationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="numberOfOperators"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="numberOfShiftsPerDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="observation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="operationClass"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="operationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="parameterId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="parameterType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="personId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="personName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="personPropertyType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="personnelClassId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="phoneNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="phoneRegId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="plannedProductLifeTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="port"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="precisionOfMovement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="processExpertiseLevelThreshold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="processSegmentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="productId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="productProductionRuleId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="productSegmentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="productionVolume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="propertyId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="protocolId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="protocolSegmentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="quantityNOKString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="quantityOKString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="quantityString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="read"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="relatedNoun"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="relocableObject"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="requiredInformation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="source"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="sourceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="speak"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="startTimestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="statusAction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="tag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="targetCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="taskImage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="theta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="timeout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="timestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="totalCounter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="traceErrorId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="unitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="uri"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="valueString"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="variableId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="variableType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="version"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="video"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="videoCounter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="visualizedContent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="visualizedDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="visualizedImage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="visualizedVideo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="wntag"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="workingDaysPerYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="write"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="writingUnderstanding"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="x"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MOVE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RESUME"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="START"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="STOP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="augmentedReality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="email"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="executionManager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="instantMessaging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="move"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="programExecutor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="pushToPhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="sound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI=";go"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="mylabel"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ActionOverObject"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ModeAction"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasEffectOnObject"/>
+                <Class IRI="Object"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ActionOverPoint"/>
+        <ObjectIntersectionOf>
+            <Class IRI="ModeAction"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="hasEffectOnPoint"/>
+                <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ControlProgram"/>
+        <Class IRI="IndustrialRobotParameter"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="EnabledProcessSegment"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isCurrentPSFor"/>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+            </ObjectSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="executionType"/>
+                <Literal>ONDEMAND</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="EnabledProcessSegment"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="isReadyFor"/>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+            </ObjectSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="executionType"/>
+                <Literal>ONDEMAND</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="ProgramRequiringWorkingArea"/>
+        <ObjectIntersectionOf>
+            <Class IRI="RoboticProgram"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="applicableToWorkingElem"/>
+                <Class IRI="WorkingArea"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasEquipmentProperty"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInteractionDevice"/>
+            <Class IRI="InteractionDevice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isExecuting"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isMadeOf"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="currentProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="lastCompleted"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="currentProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="isMadeOf"/>
+            <Class IRI="Robot"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="lastCompleted"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="equipmentName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="ipRangeEthernet"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="ipRangeWifi"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentLevel"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="equipmentType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isMadeOf"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasEquipmentClassProperty"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClassProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isGroupingOfEquipment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentClassId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClassProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="uri"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasEquipment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasEquipmentClass"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="expertiseLevelThreshold"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model3DStatus"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="quantityString"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasAnnotationRelated"/>
+            <Class IRI="Annotation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="hasError"/>
+            <Class IRI="Error"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="hasProductSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="hasProtocolSegment"/>
+            <Class IRI="ProtocolSegment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="isDefinedByProcessTraceTree"/>
+            <Class IRI="TraceProcessSegment"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="quantityString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#JobOrder"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="jobOrderId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="theta"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="x"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="y"/>
+            <Datatype abbreviatedIRI="xsd:double"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isAssembledFrom"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isGroupingOfMaterial"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="materialClassId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isAssembledFrom"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="marker"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="materialId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasMaterial"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialDefinition"/>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasMaterialClass"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="expertiseLevelThreshold"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model3DStatus"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="quantityString"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="valueString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="parameterId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="parameterType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isLoggedIn"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isUsing"/>
+            <Class IRI="InteractionDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isUsing"/>
+            <Class IRI="Tool"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="generatesAnnotation"/>
+            <Class IRI="Annotation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPersonProperty"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPersonnelClass"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="emailAccount"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="phoneRegId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="personName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="phoneNumber"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isGroupingOfPeople"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isSubscribedTo"/>
+            <Class IRI="Notification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="personnelClassId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClassProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPerson"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPersonnelClass"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="quantityString"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="followsProductProductionRule"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasAnnotationRelated"/>
+            <Class IRI="Annotation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasEquipmentSegmentSpecification"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentSegmentSpecification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasMaterialSegmentSpecification"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#MaterialSegmentSpecification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasPersonnelSegmentSpecification"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelSegmentSpecification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasProcessParameterSpecification"/>
+            <Class IRI="ProcessSegmentParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasRelatedInformation"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isMadeOf"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="duration"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="hoursPerShift"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="numberOfShiftsPerDay"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="operationType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="targetCost"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="workingDaysPerYear"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="executionType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="processSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="operationClass"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="processExpertiseLevelThreshold"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="relatedToProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="expertiseLevelThreshold"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="followsProductProductionRule"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="hasProductSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="plannedProductLifeTime"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="productionVolume"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="version"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductDefinition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="productId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="aboutActor"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="animationTrack"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="documentation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="expertiseLevelThreshold"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="image"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="taskImage"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="version"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="video"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="productProductionRuleId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductProductionRule"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="relocableObject"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasSegmentDependency"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isDefinedByProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isMadeOf"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="marker"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProductSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="productSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="valueString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Property"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="propertyId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="annualElectricityConsumptionStandBy"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="annualElectricityConsumptionWhileWorking"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="annualMaintenanceCost"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="costPerSurfacePerMonth"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="economicUsefulLife"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="installationSurface"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="loACognitive"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="loAPhysical"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="machinePurchaseValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="machineSaleValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="marker"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="model"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="numberOfOperators"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataHasValue>
+            <DataProperty IRI="equipmentLevel"/>
+            <Literal>WORKUNIT</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="ip"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Annotation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="relatedToProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Annotation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Annotation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="status"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Annotation"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="annotationId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArmLength"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArmLength"/>
+        <DataHasValue>
+            <DataProperty IRI="personPropertyType"/>
+            <Literal>ANTHOPOMETRICCHARACTERISTIC</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BasicAction"/>
+        <Class IRI="ModeAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Channel"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="requiredInformation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="eventType"/>
+            <DataOneOf>
+                <Literal>NAVIGATION</Literal>
+                <Literal>PROCESSPARAMETER</Literal>
+                <Literal>PROGRAMEXECUTION</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="processSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="statusAction"/>
+            <DataOneOf>
+                <Literal>EXECUTE</Literal>
+                <Literal>RESUME</Literal>
+                <Literal>STOP</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CommandEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="destinationEquipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConfigurationMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConfigurationMethod"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="SmartToolParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConfigurationMethod"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <NamedIndividual IRI="START"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlProgram"/>
+        <Class IRI="MethodParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlProgram"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="ControlProgramParameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlProgram"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlProgram"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="controlProgramId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ControlProgramParameter"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cost"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cost"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="documentation"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="documentationCounter"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="image"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="imageCounter"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="totalCounter"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="video"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DigitalContentPreferences"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="videoCounter"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnabledProcessSegment"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="errorId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="locationId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="eventType"/>
+            <DataOneOf>
+                <Literal>LOCATION</Literal>
+                <Literal>PARAMETER</Literal>
+                <Literal>STATUS</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EquipmentEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="status"/>
+            <DataOneOf>
+                <Literal>DOWN</Literal>
+                <Literal>ERROR</Literal>
+                <Literal>IDLE</Literal>
+                <Literal>RUNNING</Literal>
+                <Literal>STOPPED</Literal>
+                <Literal>WAITING</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Error"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isSolvedBy"/>
+            <Class IRI="MaintenanceProtocolDefinition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Error"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Error"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="errorId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Error"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="errorType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="timestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="eventType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExecutionMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExecutionMethod"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="ControlProgram"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExecutionMethod"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <NamedIndividual IRI="START"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Expertise"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Expertise"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="propertyRelatedTo"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Expertise"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="operationClass"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Expertise"/>
+        <DataHasValue>
+            <DataProperty IRI="personPropertyType"/>
+            <Literal>EXPERTISELEVEL</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FeedbackAction"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#TemporalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FeedbackAction"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="executedByExecModule"/>
+            <NamedIndividual IRI="executionManager"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="distinguishColours"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="hear"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="read"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="speak"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="write"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="writingUnderstanding"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FunctionalCapabilities"/>
+        <DataHasValue>
+            <DataProperty IRI="personPropertyType"/>
+            <Literal>FUNCTIONALCAPABILITY</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HeadMountedDevice"/>
+        <Class IRI="InteractionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HeadMountedDevice"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="augmentedReality"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Height"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Height"/>
+        <DataHasValue>
+            <DataProperty IRI="personPropertyType"/>
+            <Literal>ANTHOPOMETRICCHARACTERISTIC</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="interactionDeviceId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="sourceType"/>
+            <DataOneOf>
+                <Literal>LEGACY</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IdentificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="status"/>
+            <DataOneOf>
+                <Literal>IN</Literal>
+                <Literal>OUT</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndustrialRobot"/>
+        <Class IRI="Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndustrialRobot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="executes"/>
+            <ObjectUnionOf>
+                <Class IRI="ExecutionMethod"/>
+                <Class IRI="ResumingMethod"/>
+                <Class IRI="StoppingMethod"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndustrialRobotParameter"/>
+        <Class IRI="MethodParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InitializationMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InitializationMethod"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="MethodParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InteractionDevice"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="interactionDeviceId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LightIndicator"/>
+        <Class IRI="InteractionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LightIndicator"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="light"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LocationVariable"/>
+        <Class IRI="Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LocationVariable"/>
+        <DataHasValue>
+            <DataProperty IRI="variableType"/>
+            <Literal>http://a4blue/ontologies/var.owl#LocationVariable</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaintenanceProtocolDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasProtocolSegment"/>
+            <Class IRI="ProtocolSegment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaintenanceProtocolDefinition"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isSolvedBy"/>
+            <Class IRI="MaintenanceProtocolDefinition"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaintenanceProtocolDefinition"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaintenanceProtocolDefinition"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="protocolId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <Class IRI="StatusAction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="MethodParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasOutput"/>
+            <Class IRI="OutputParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="implementation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="methodId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Method"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="methodOrder"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MethodParameter"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MethodParameter"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="implementation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MobileRobot"/>
+        <Class IRI="Robot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MobileRobot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="executes"/>
+            <ObjectUnionOf>
+                <Class IRI="NavigationMethod"/>
+                <Class IRI="StoppingMethod"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ModeAction"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#TemporalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NavigationMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NavigationMethod"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NavigationMethod"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <NamedIndividual IRI="MOVE"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isFor"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClass"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="isNotifiedBy"/>
+            <Class IRI="Channel"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="timeout"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="notificationFormat"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="notificationId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notification"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="notificationType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="timeout"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="eventType"/>
+            <DataOneOf>
+                <Literal>COLLABORATION</Literal>
+                <Literal>INSPECTION</Literal>
+                <Literal>MAINTENANCE</Literal>
+                <Literal>PARAMETERUPDATE</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="locationId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NotificationEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="executes"/>
+            <Class IRI="Method"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasVariable"/>
+            <Class IRI="Variable"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="ip"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="loadClass"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OPC-UAServer"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="port"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OnJobAssistanceEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OperationVariable"/>
+        <Class IRI="Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OperationVariable"/>
+        <DataHasValue>
+            <DataProperty IRI="variableType"/>
+            <Literal>http://a4blue/ontologies/var.owl#OperationVariable</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OutputParameter"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PC"/>
+        <Class IRI="InteractionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PC"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="email"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PC"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="instantMessaging"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterVariable"/>
+        <Class IRI="Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ParameterVariable"/>
+        <DataHasValue>
+            <DataProperty IRI="variableType"/>
+            <Literal>http://a4blue/ontologies/var.owl#ParameterVariable</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="eventType"/>
+            <DataOneOf>
+                <Literal>JOBORDER</Literal>
+                <Literal>OPERATION</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="jobOrderId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="processSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="productSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="source"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="sourceType"/>
+            <DataOneOf>
+                <Literal>AUTOMATION</Literal>
+                <Literal>INTERACTION</Literal>
+                <Literal>LEGACY</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="statusAction"/>
+            <DataOneOf>
+                <Literal>END</Literal>
+                <Literal>RESUME</Literal>
+                <Literal>START</Literal>
+                <Literal>STOP</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessSegmentParameter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasInput"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessSegmentParameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessSegmentParameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessSegmentParameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProcessSegmentParameter"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="valueString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProgramAction"/>
+        <Class IRI="ModeAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProgramRequiringWorkingArea"/>
+        <Class IRI="RoboticProgram"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProportionalWageCost"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonnelClassProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProportionalWageCost"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="relatedToProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtocolSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasSegmentDependency"/>
+            <Class IRI="ProtocolSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtocolSegment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isDefinedByProcessSegment"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtocolSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="description"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="protocolSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="jobOrderId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="observation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="processSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="unitOfMeasure"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="quantityNOKString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="QualityEvent"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="quantityOKString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReachParameterVariable"/>
+        <Class IRI="Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReachParameterVariable"/>
+        <DataHasValue>
+            <DataProperty IRI="variableType"/>
+            <Literal>http://a4blue/ontologies/var.owl#ReachParameterVariable</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResumingMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResumingMethod"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <NamedIndividual IRI="RESUME"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Robot"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Robot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="executes"/>
+            <Class IRI="Method"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Robot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasBinaryRepresentation"/>
+            <Class IRI="OPC-UAServer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Robot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="uses"/>
+            <Class IRI="Tool"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RoboticProgram"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="executedByExecModule"/>
+            <NamedIndividual IRI="programExecutor"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Site"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Site"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="electricityPrice"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Site"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="interestRate"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Site"/>
+        <DataHasValue>
+            <DataProperty IRI="equipmentLevel"/>
+            <Literal>SITE</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SmartTool"/>
+        <Class IRI="Tool"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SmartTool"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasBinaryRepresentation"/>
+            <Class IRI="OPC-UAServer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SmartTool"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="executesProcessParameter"/>
+            <Class IRI="ProcessSegmentParameter"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SmartToolParameter"/>
+        <Class IRI="MethodParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Smartphone"/>
+        <Class IRI="InteractionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Smartphone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="email"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Smartphone"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="pushToPhone"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Speaker"/>
+        <Class IRI="InteractionDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Speaker"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isValidFor"/>
+            <NamedIndividual IRI="sound"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Status"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Status"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasError"/>
+            <Class IRI="Error"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Status"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="valueString"/>
+            <DataOneOf>
+                <Literal>NOK</Literal>
+                <Literal>OK</Literal>
+            </DataOneOf>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StatusAction"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#TemporalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StatusVariable"/>
+        <Class IRI="Variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StatusVariable"/>
+        <DataHasValue>
+            <DataProperty IRI="variableType"/>
+            <Literal>http://a4blue/ontologies/var.owl#StatusVariable</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StoppingMethod"/>
+        <Class IRI="Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="StoppingMethod"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="isActivatedBy"/>
+            <NamedIndividual IRI="STOP"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tool"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceError"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="isSolvedBy"/>
+            <Class IRI="TraceProtocolSegment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceError"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isTraceOf"/>
+            <Class IRI="Error"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceError"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="errorSolved"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceError"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceError"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="traceErrorId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isTraceOf"/>
+            <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="visualizedContent"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="endTimestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="finished"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="jobOrderId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="processSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="actualParameterValue"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="errorId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="productSegmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProcessSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="startTimestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="isTraceOf"/>
+            <Class IRI="ProtocolSegment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="personId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="endTimestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="equipmentId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="errorSolved"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="finished"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="jobOrderId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="startTimestamp"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TraceProtocolSegment"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="traceErrorId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Variable"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="dataType"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Variable"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="implementation"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Variable"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="valueString"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Variable"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="variableId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkingArea"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkingPiece"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <Class IRI="Object"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="BasicAction"/>
+        <Class IRI="ProgramAction"/>
+        <Class IRI="StatusAction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="IndustrialRobot"/>
+        <Class IRI="MobileRobot"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="StatusAction"/>
+        <NamedIndividual IRI="MOVE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="StatusAction"/>
+        <NamedIndividual IRI="RESUME"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="StatusAction"/>
+        <NamedIndividual IRI="START"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="StatusAction"/>
+        <NamedIndividual IRI="STOP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="augmentedReality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ActionOverObject"/>
+        <NamedIndividual IRI="bring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ActionOverPoint"/>
+        <NamedIndividual IRI="bring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BasicAction"/>
+        <NamedIndividual IRI="bring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="email"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExecutionModule"/>
+        <NamedIndividual IRI="executionManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="instantMessaging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BasicAction"/>
+        <NamedIndividual IRI="move"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExecutionModule"/>
+        <NamedIndividual IRI="programExecutor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="pushToPhone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Channel"/>
+        <NamedIndividual IRI="sound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ActionOverPoint"/>
+        <NamedIndividual IRI=";go"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="BasicAction"/>
+        <NamedIndividual IRI=";go"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="executedByExecModule"/>
+        <NamedIndividual IRI="RESUME"/>
+        <NamedIndividual IRI="executionManager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="executedByExecModule"/>
+        <NamedIndividual IRI="START"/>
+        <NamedIndividual IRI="programExecutor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="executedByExecModule"/>
+        <NamedIndividual IRI="STOP"/>
+        <NamedIndividual IRI="executionManager"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="en">bring</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="en">come</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="en">go</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="es">ir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="es">llevar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="en">take</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="es">traer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="MOVE"/>
+        <Literal xml:lang="es">venir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="RESUME"/>
+        <Literal xml:lang="es">continuar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="RESUME"/>
+        <Literal xml:lang="en">continue</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="RESUME"/>
+        <Literal xml:lang="es">reanudar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="RESUME"/>
+        <Literal xml:lang="en">resume</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="RESUME"/>
+        <Literal xml:lang="es">seguir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="START"/>
+        <Literal xml:lang="es">empezar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="START"/>
+        <Literal xml:lang="en">start</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="STOP"/>
+        <Literal xml:lang="es">parar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="STOP"/>
+        <Literal xml:lang="en">stop</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="bring"/>
+        <Literal xml:lang="es">acercar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="bring"/>
+        <Literal xml:lang="es">traer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="requiredInformation"/>
+        <NamedIndividual IRI="email"/>
+        <Literal>emailAccount</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="move"/>
+        <Literal xml:lang="es">mover</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI="move"/>
+        <Literal xml:lang="es">pasar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="requiredInformation"/>
+        <NamedIndividual IRI="pushToPhone"/>
+        <Literal>phoneRegId</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI=";go"/>
+        <Literal xml:lang="es">acercar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI=";go"/>
+        <Literal xml:lang="es">ir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="tag"/>
+        <NamedIndividual IRI=";go"/>
+        <Literal xml:lang="es">venir</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasAfterEndDependency"/>
+        <ObjectProperty IRI="isNext"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasAfterFailDependency"/>
+        <ObjectProperty IRI="isNextConditional"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="isLoggedIn"/>
+        <ObjectProperty IRI="isUsing"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="currentControlProgram"/>
+        <ObjectProperty IRI="currentParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="currentPSExecuting"/>
+        <ObjectProperty IRI="currentProcessSegment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="currentPSReady"/>
+        <ObjectProperty IRI="currentProcessSegment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="currentPSStandBy"/>
+        <ObjectProperty IRI="currentProcessSegment"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="executesAction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAfterEndDependency"/>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAfterFailDependency"/>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFifithOutput"/>
+        <ObjectProperty IRI="hasOutput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFifthInput"/>
+        <ObjectProperty IRI="hasInput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFirstInput"/>
+        <ObjectProperty IRI="hasInput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFirstOutput"/>
+        <ObjectProperty IRI="hasOutput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFourthInput"/>
+        <ObjectProperty IRI="hasInput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFourthOutput"/>
+        <ObjectProperty IRI="hasOutput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNotFollowDependency"/>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNotInparallelDependency"/>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPossibleParallelDependency"/>
+        <ObjectProperty IRI="hasSegmentDependency"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPotentialInput"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSecondInput"/>
+        <ObjectProperty IRI="hasInput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSecondOutput"/>
+        <ObjectProperty IRI="hasOutput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasThirdInput"/>
+        <ObjectProperty IRI="hasInput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasThirdOutput"/>
+        <ObjectProperty IRI="hasOutput"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isCurrentControlProgramFor"/>
+        <ObjectProperty IRI="isCurrentParameterFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="iscurrentPSExecutingFor"/>
+        <ObjectProperty IRI="isCurrentPSFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="iscurrentPSReadyFor"/>
+        <ObjectProperty IRI="isCurrentPSFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="iscurrentPSStandByFor"/>
+        <ObjectProperty IRI="isCurrentPSFor"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="belongsTo"/>
+        <ObjectProperty IRI="isGroupingOfEquipment"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="canUse"/>
+        <ObjectProperty IRI="isValidFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentControlProgram"/>
+        <ObjectProperty IRI="isCurrentControlProgramFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentPSExecuting"/>
+        <ObjectProperty IRI="iscurrentPSExecutingFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentPSReady"/>
+        <ObjectProperty IRI="iscurrentPSReadyFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentPSStandBy"/>
+        <ObjectProperty IRI="iscurrentPSStandByFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentParameter"/>
+        <ObjectProperty IRI="isCurrentParameterFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="currentProcessSegment"/>
+        <ObjectProperty IRI="isCurrentPSFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasInput"/>
+        <ObjectProperty IRI="isInputFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPersonProperty"/>
+        <ObjectProperty IRI="propertyRelatedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPersonnelClass"/>
+        <ObjectProperty IRI="isGroupingOfPeople"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPotentialInput"/>
+        <ObjectProperty IRI="isPotentialInputFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasReady"/>
+        <ObjectProperty IRI="isReadyFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasWorkingArea"/>
+        <ObjectProperty IRI="isPartOfWorkingPiece"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isBeingUsedBy"/>
+        <ObjectProperty IRI="isLoggedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isFor"/>
+        <ObjectProperty IRI="isSubscribedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isMadeOf"/>
+        <ObjectProperty IRI="isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isNext"/>
+        <ObjectProperty IRI="isPrevious"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <ObjectProperty IRI="lastCompleted"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isPartOfWorkingPiece"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="contains"/>
+        <Class IRI="WorkingPiece"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="generatesAnnotation"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEffectOnObject"/>
+        <Class IRI="ModeAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEffectOnPoint"/>
+        <Class IRI="ModeAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPersonProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRelatedInformation"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWorkingArea"/>
+        <Class IRI="WorkingPiece"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPartOfWorkingPiece"/>
+        <Class IRI="WorkingArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="propertyRelatedTo"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="applicableToWorkingElem"/>
+        <ObjectUnionOf>
+            <Class IRI="WorkingArea"/>
+            <Class IRI="WorkingPiece"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="contains"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="executesAction"/>
+        <Class IRI="BasicAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="generatesAnnotation"/>
+        <Class IRI="Annotation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAccessTo"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEffectOnObject"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEffectOnPoint"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPersonProperty"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#PersonProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRelatedInformation"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegmentInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWorkingArea"/>
+        <Class IRI="WorkingArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPartOfWorkingPiece"/>
+        <Class IRI="WorkingPiece"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="propertyRelatedTo"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="relatedToProcessSegment"/>
+        <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="applicableToWorkingElem"/>
+            <ObjectProperty IRI="isPartOfWorkingPiece"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="applicableToWorkingElem"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="currentProcessSegment"/>
+            <ObjectProperty IRI="hasProcessParameterSpecification"/>
+            <ObjectProperty IRI="hasInput"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="currentParameter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasAfterEndDependency"/>
+            <ObjectProperty IRI="isPerformedBy"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isReadyFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasBinaryRepresentation"/>
+            <ObjectProperty IRI="executes"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="executes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isExecutedBy"/>
+            <ObjectProperty IRI="executes"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isPotentialInputFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isLoggedIn"/>
+            <ObjectProperty IRI="hasAccessTo"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isLoggedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isLoggedIn"/>
+            <ObjectProperty IRI="isMadeOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isLoggedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isPartOf"/>
+            <ObjectProperty IRI="hasEquipmentSegmentSpecification"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasEquipmentSegmentSpecification"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isPartOf"/>
+            <ObjectProperty IRI="hasProcessParameterSpecification"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasProcessParameterSpecification"/>
+    </SubObjectPropertyOf>
+    <EquivalentDataProperties>
+        <DataProperty IRI="frame"/>
+        <DataProperty IRI="unitOfMeasure"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="dataType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="distinguishColours"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="documentationCounter"/>
+        <DataProperty IRI="counter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="endTimestamp"/>
+        <DataProperty IRI="timestamp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hear"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="imageCounter"/>
+        <DataProperty IRI="counter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ipRangeEthernet"/>
+        <DataProperty IRI="ipRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="ipRangeWifi"/>
+        <DataProperty IRI="ipRange"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="quantityNOKString"/>
+        <DataProperty IRI="quantityString"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="quantityOKString"/>
+        <DataProperty IRI="quantityString"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="read"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="speak"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="startTimestamp"/>
+        <DataProperty IRI="timestamp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="timeout"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="totalCounter"/>
+        <DataProperty IRI="counter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="videoCounter"/>
+        <DataProperty IRI="counter"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="visualizedDocumentation"/>
+        <DataProperty IRI="visualizedContent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="visualizedImage"/>
+        <DataProperty IRI="visualizedContent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="visualizedVideo"/>
+        <DataProperty IRI="visualizedContent"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="write"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="writingUnderstanding"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="distinguishColours"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="duration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="economicUsefulLife"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="electricityPrice"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="equipmentLevel"/>
+        <DataOneOf>
+            <Literal>AREA</Literal>
+            <Literal>ENTERPRISE</Literal>
+            <Literal>SITE</Literal>
+            <Literal>STORAGEAREA</Literal>
+            <Literal>WORKCENTER</Literal>
+            <Literal>WORKUNIT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="equipmentType"/>
+        <DataOneOf>
+            <Literal>REAL</Literal>
+            <Literal>VIRTUAL</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="errorSolved"/>
+        <DataOneOf>
+            <Literal>0</Literal>
+            <Literal>1</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="errorType"/>
+        <DataOneOf>
+            <Literal>1</Literal>
+            <Literal>2</Literal>
+            <Literal>3</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="executionType"/>
+        <DataOneOf>
+            <Literal>ONDEMAND</Literal>
+            <Literal>ONEVENT</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="finished"/>
+        <DataOneOf>
+            <Literal>0</Literal>
+            <Literal>1</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hear"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hoursPerShift"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="interestRate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="jobOrderType"/>
+        <DataOneOf>
+            <Literal>MAINTENANCE</Literal>
+            <Literal>PRODUCTION</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="loACognitive"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="loAPhysical"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="machinePurchaseValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="machineSaleValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="notificationFormat"/>
+        <DataOneOf>
+            <Literal>ERROR</Literal>
+            <Literal>NOTICE</Literal>
+            <Literal>WARNING</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="notificationType"/>
+        <DataOneOf>
+            <Literal>AUTOMATION</Literal>
+            <Literal>BESTPRACTISE</Literal>
+            <Literal>COLLABORATION</Literal>
+            <Literal>FEEDBACK</Literal>
+            <Literal>INSPECTION</Literal>
+            <Literal>INTERACTION</Literal>
+            <Literal>MAINTENANCE</Literal>
+            <Literal>PARAMETER</Literal>
+            <Literal>SYSTEM</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="numberOfShiftsPerDay"/>
+        <DataOneOf>
+            <Literal>1</Literal>
+            <Literal>2</Literal>
+            <Literal>3</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="operationClass"/>
+        <DataOneOf>
+            <Literal>ASSEMBLY</Literal>
+            <Literal>COLLABORATIVE ASSEMBLY</Literal>
+            <Literal>DUALARM MAINTENANCE</Literal>
+            <Literal>HYDRAULIC ASSEMBLY</Literal>
+            <Literal>SEGWAY MAINTENANCE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="operationType"/>
+        <DataOneOf>
+            <Literal>CONFIGURATION</Literal>
+            <Literal>INVENTORY</Literal>
+            <Literal>LOGISTIC</Literal>
+            <Literal>MAINTENANCE</Literal>
+            <Literal>PREPARATION</Literal>
+            <Literal>PRODUCTION</Literal>
+            <Literal>QUALITY</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="parameterType"/>
+        <DataOneOf>
+            <Literal>CNX</Literal>
+            <Literal>CONTROL_PROGRAM</Literal>
+            <Literal>FRAME</Literal>
+            <Literal>HEIGHT</Literal>
+            <Literal>OTHER</Literal>
+            <Literal>STREAMING</Literal>
+            <Literal>THETA</Literal>
+            <Literal>TORQUE</Literal>
+            <Literal>WRENCHMODE</Literal>
+            <Literal>X</Literal>
+            <Literal>Y</Literal>
+            <Literal>ZEROING</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="personPropertyType"/>
+        <DataOneOf>
+            <Literal>ANTHOPOMETRICCHARACTERISTIC</Literal>
+            <Literal>EXPERTISELEVEL</Literal>
+            <Literal>FUNCTIONALCAPABILITY</Literal>
+            <Literal>PREFERENCE</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="plannedProductLifeTime"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="precisionOfMovement"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="productionVolume"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="relocableObject"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="speak"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="unitOfMeasure"/>
+        <DataOneOf>
+            <Literal>CM</Literal>
+            <Literal>EURO</Literal>
+            <Literal>M</Literal>
+            <Literal>MAP</Literal>
+            <Literal>WORLD</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="workingDaysPerYear"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="write"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="writingUnderstanding"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isPartOf"/>
+                <Variable IRI="urn:swrl:var#eqc2"/>
+                <Variable IRI="urn:swrl:var#eqc1"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+                <Variable IRI="urn:swrl:var#eqc1"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isGroupingOfEquipment"/>
+                <Variable IRI="urn:swrl:var#eqc1"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#EquipmentClass"/>
+                <Variable IRI="urn:swrl:var#eqc2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isGroupingOfEquipment"/>
+                <Variable IRI="urn:swrl:var#eqc2"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="MobileRobot"/>
+                <Variable IRI="urn:swrl:var#mr"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasEquipmentProperty"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+                <Variable IRI="urn:swrl:var#eqp"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Location"/>
+                <Variable IRI="urn:swrl:var#eqp"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+                <Variable IRI="urn:swrl:var#mr"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="executes"/>
+                <Variable IRI="urn:swrl:var#opcs"/>
+                <Variable IRI="urn:swrl:var#nm"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasBinaryRepresentation"/>
+                <Variable IRI="urn:swrl:var#mr"/>
+                <Variable IRI="urn:swrl:var#opcs"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="NavigationMethod"/>
+                <Variable IRI="urn:swrl:var#nm"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#eq1"/>
+                <Variable IRI="urn:swrl:var#eq2"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasPotentialInput"/>
+                <Variable IRI="urn:swrl:var#nm"/>
+                <Variable IRI="urn:swrl:var#eqp"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#sf"/>
+                <Variable IRI="urn:swrl:var#wu"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#sf"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#WorkUnit"/>
+                <Variable IRI="urn:swrl:var#wu"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#sf"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasAccessTo"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+                <Variable IRI="urn:swrl:var#wu"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="InteractionDevice"/>
+                <Variable IRI="urn:swrl:var#hmd"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isUsing"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#hmd"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Person"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isUsingInteractionDevice"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#hmd"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="operationClass"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#value"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+                <Variable IRI="urn:swrl:var#psh"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isMadeOf"/>
+                <Variable IRI="urn:swrl:var#p"/>
+                <Variable IRI="urn:swrl:var#psh"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="operationClass"/>
+                <Variable IRI="urn:swrl:var#psh"/>
+                <Variable IRI="urn:swrl:var#value"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isPartOf"/>
+                <Variable IRI="urn:swrl:var#wcexec"/>
+                <Variable IRI="urn:swrl:var#sh"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="operationType"/>
+                <Variable IRI="urn:swrl:var#ps"/>
+                <Literal>LOGISTIC</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isGroupingOfEquipment"/>
+                <Variable IRI="urn:swrl:var#wcclass"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isCurrentPSFor"/>
+                <Variable IRI="urn:swrl:var#ps"/>
+                <Variable IRI="urn:swrl:var#wcexec"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isPartOf"/>
+                <Variable IRI="urn:swrl:var#eqclass"/>
+                <Variable IRI="urn:swrl:var#wcclass"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasEquipmentClass"/>
+                <Variable IRI="urn:swrl:var#psess"/>
+                <Variable IRI="urn:swrl:var#eqclass"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isPartOf"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+                <Variable IRI="urn:swrl:var#sh"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+                <Variable IRI="urn:swrl:var#ps"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="hasEquipmentSegmentSpecification"/>
+                <Variable IRI="urn:swrl:var#ps"/>
+                <Variable IRI="urn:swrl:var#psess"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="isCurrentPSFor"/>
+                <Variable IRI="urn:swrl:var#ps"/>
+                <Variable IRI="urn:swrl:var#wc"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>bring</IRI>
+        <Literal xml:lang="es">traer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFifithOutput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFifthInput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFirstInput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFirstOutput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFourthInput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasFourthOutput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasSecondInput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasSecondOutput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasThirdInput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="mylabel"/>
+        <IRI>hasThirdOutput</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>move</IRI>
+        <Literal xml:lang="es">mover</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>;go</IRI>
+        <Literal xml:lang="es">acercar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>;go</IRI>
+        <Literal xml:lang="es">ir</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>;go</IRI>
+        <Literal xml:lang="es">venir</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
