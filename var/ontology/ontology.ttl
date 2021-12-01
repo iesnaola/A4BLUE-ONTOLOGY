@@ -17,7 +17,7 @@ Patricia Casla <mailto:patricia.casla@tekniker.es>"""^^xsd:string ;
                         <http://purl.org/dc/terms/title> "VAR Ontology"^^xsd:string ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "var"^^xsd:string ;
                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/var> ;
-                        owl:versionInfo 0.1 .
+                        owl:versionInfo 0.2 .
 
 #################################################################
 #    Annotation properties

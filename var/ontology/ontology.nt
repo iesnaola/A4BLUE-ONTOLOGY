@@ -8,7 +8,7 @@
 <https://w3id.org/var> <http://purl.org/dc/terms/title> "VAR Ontology" .
 <https://w3id.org/var> <http://purl.org/vocab/vann/preferredNamespacePrefix> "var" .
 <https://w3id.org/var> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/var> .
-<https://w3id.org/var> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/var> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################

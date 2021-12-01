@@ -58,7 +58,7 @@ Patricia Casla &lt;mailto:patricia.casla@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.2</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://www.mesa.org/xml/B2MML-V0600#Equipment"/>

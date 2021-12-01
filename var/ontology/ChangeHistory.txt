@@ -1,0 +1,29 @@
+-------------------------------------
+-- Log of changes from version 0.1 --
+-------------------------------------
+
+Rename properties and classes starting with var:varxxx to var:xxx
+
+Remove controlProgramId data property. Replace it by 'dcterms:identifier' in ControlProgram class
+Remove materialId data property. Replace it by 'dcterms:identifier' in MaterialDefinition class
+Remove productProductionRuleId data property. Replace it by 'dcterms:identifier' in ProductProductionRule class
+Remove protocolSegmentId data property. Replace it by 'dcterms:identifier' in ProtocolSegment class
+Remove propertyId data property. Replace it by 'dcterms:identifier' in Property class
+Remove annotationId data property. Replace it by 'dcterms:identifier' in Annotation class
+Remove protocolId data property. Replace it by 'dcterms:identifier' in MaintenanceProtocolDefinition class
+Remove productId data property. Replace it by 'dcterms:identifier' in ProductDefinition class
+Remove equipmentClassId data property. Replace it by 'dcterms:identifier' in EquipmentClass class
+Remove personnelClassId data property. Replace it by 'dcterms:identifier' in PersonnelClass class
+Remove variableId data property. Replace it by 'dcterms:identifier' in Variable class
+Remove methodId data property. Replace it by 'dcterms:identifier' in Method class
+Remove destinationEquipmentId data property. Replace it by 'dcterms:identifier' in CommandEvent class
+Remove notificationId data property. Replace it by 'dcterms:identifier' in Notification class
+Remove materialClassId data property. Replace it by 'dcterms:identifier' in MaterialClass class
+
+Remove unnecessary uri data property
+
+Remove hear boolean data property. Replace it by 'PersonWithAuditoryCapabilities' class
+Remove speak boolean data property. Replace it by 'PersonWithSpeechCapabilities' class
+Remove write boolean data property. Replace it by 'PersonWithWritingCapabilities' class
+Remove writingunderstanding boolean data property. Replace it by 'PersonWithWritingUnderstandingCapabilities' class
+Remove distinguishcolors boolean data property. Replace it by PersonWithColourDistinguishingCapabilities
