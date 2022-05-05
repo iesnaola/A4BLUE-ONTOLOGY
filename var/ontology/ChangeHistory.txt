@@ -1,29 +1,56 @@
 -------------------------------------
+-- Log of changes from version 0.2 --
+-------------------------------------
+
++Rename var:;go to var:go
+
++Remove 'var:finished' data property (with values 0 and 1). Replace it with 'var:FinishedTraceProtocolSegment' and 'var:FinishedProcessProtocolSegment' classes
++Remove 'var:errorSolved' data property (with values 0 and 1). Replace it with 'var:SolvedError' class
++Remove 'var:read' boolean data property. Replace it by 'var:PersonWithReadingCapabilities' class
++Remove 'var:relocableObject' boolean data property. Replace it by 'var:RelocableObject' class
++Remove 'var:precisionOfMovement' boolean data property.
++Remove 'var:errorId' data property. Replace it by 'dcterms:identifier' in Error class and with 'var:hasError' object property in var:EquipmentEvent class
++Remove 'var:personId' data property. Replace it by 'dcterms:identifier' in var:Person class. Create 'var:hasPerson' object property to relate 'var:CommandEvent', 'var:ProcessEvent', 'var:QualityEvent', 'var:NotificationEvent', 'var:IdentifiationEvent', 'var:TraceProcessSegment' and 'var:TraceProtocolSegment' with 'var:Person' class
++Remove var:jobOrderId data property. Replace it by 'dcterms:identifier' in var:Person class. Create 'var:hasJobOrder' object property to relate 'var:ProcessEvent', 'var:QualityEvent', 'var:TraceProcessSegment' and 'var:TraceProtocolSegment' with 'var:JobOrder' class
++Remove var:locationId data property. Create 'var:hasLocation' object property to relate 'var:EquipmentEvent' and 'var:NotificationEvent' with 'var:Location' class
++Remove var:traceErrorId data property. Create 'var:hasTraceError' object property to relate 'var:TraceProtocolSegment' with 'var:TraceError' class
++Remove var:equipmentid data property. Replace it with 'var:hasEquipment' object property in 'var:TraceError', 'var:CommandEvent', 'var:ProcessEvent', 'var:QualityEvent', 'var:EquipmentEvent', 'var:NotificationEvent', 'var:IdentifiationEvent', 'var:TraceProcessSegment' and 'var:TraceProtocolSegment' class
++Remove var:processSegmentId data property. Replace it by 'dcterms:identifier' in var:ProcessSegment class. Create 'var:hasProcessSegment' object property to relate 'var:CommandEvent', 'var:ProcessEvent', 'var:QualityEvent' and 'var:TraceProcessSegment' with 'var:ProcessSegment' class
++Remove var:productSegmentId data property. Replace it by 'dcterms:identifier' in var:ProcessSegment class. Create 'var:hasProductSegment' object property to relate 'var:ProcessEvent' and 'var:ProcessEvent' with 'var:ProductSegment' class
++Remove var:interactionDeviceId data property. Replace it by 'dcterms:identifier' in var:InteractionDevice class. Create 'var:hasInteractionDevice' object property to relate 'var:IdentificationEvent' with 'var:InteractionDevice' class
+
++Remove 'var:personName' and 'var:equipmentName' data properties. The existing 'var:name' data proprerty suffices
+
++Add 'dcterms:identifier' in 'var:Location' class
++Replace <http://www.mesa.org/xml/B2MML-V0600mespace> with 'var' namespace
+
+
+-------------------------------------
 -- Log of changes from version 0.1 --
 -------------------------------------
 
-Rename properties and classes starting with var:varxxx to var:xxx
++Rename properties and classes starting with var:varxxx to var:xxx
 
-Remove controlProgramId data property. Replace it by 'dcterms:identifier' in ControlProgram class
-Remove materialId data property. Replace it by 'dcterms:identifier' in MaterialDefinition class
-Remove productProductionRuleId data property. Replace it by 'dcterms:identifier' in ProductProductionRule class
-Remove protocolSegmentId data property. Replace it by 'dcterms:identifier' in ProtocolSegment class
-Remove propertyId data property. Replace it by 'dcterms:identifier' in Property class
-Remove annotationId data property. Replace it by 'dcterms:identifier' in Annotation class
-Remove protocolId data property. Replace it by 'dcterms:identifier' in MaintenanceProtocolDefinition class
-Remove productId data property. Replace it by 'dcterms:identifier' in ProductDefinition class
-Remove equipmentClassId data property. Replace it by 'dcterms:identifier' in EquipmentClass class
-Remove personnelClassId data property. Replace it by 'dcterms:identifier' in PersonnelClass class
-Remove variableId data property. Replace it by 'dcterms:identifier' in Variable class
-Remove methodId data property. Replace it by 'dcterms:identifier' in Method class
-Remove destinationEquipmentId data property. Replace it by 'dcterms:identifier' in CommandEvent class
-Remove notificationId data property. Replace it by 'dcterms:identifier' in Notification class
-Remove materialClassId data property. Replace it by 'dcterms:identifier' in MaterialClass class
++Remove 'var:controlProgramId' data property. Replace it by 'dcterms:identifier' in 'var:ControlProgram' class
++Remove 'var:materialId' data property. Replace it by 'dcterms:identifier' in 'var:MaterialDefinition' class
++Remove 'var:productProductionRuleId' data property. Replace it by 'dcterms:identifier' in 'var:ProductProductionRule' class
++Remove 'var:protocolSegmentId' data property. Replace it by 'dcterms:identifier' in 'var:ProtocolSegment' class
++Remove 'var:propertyId' data property. Replace it by 'dcterms:identifier' in 'var:Property' class
++Remove 'var:annotationId' data property. Replace it by 'dcterms:identifier' in 'var:Annotation' class
++Remove 'var:protocolId' data property. Replace it by 'dcterms:identifier' in 'var:MaintenanceProtocolDefinition' class
++Remove 'var:productId' data property. Replace it by 'dcterms:identifier' in 'var:ProductDefinition' class
++Remove 'var:equipmentClassId' data property. Replace it by 'dcterms:identifier' in 'var:EquipmentClass' class
++Remove 'var:personnelClassId' data property. Replace it by 'dcterms:identifier' in 'var:PersonnelClass' class
++Remove 'var:variableId' data property. Replace it by 'dcterms:identifier' in 'var:Variable' class
++Remove 'var:methodId' data property. Replace it by 'dcterms:identifier' in 'var:Method' class
++Remove 'var:destinationEquipmentId' data property. Replace it by 'dcterms:identifier' in 'var:CommandEvent' class
++Remove 'var:notificationId' data property. Replace it by 'dcterms:identifier' in 'var:Notification' class
++Remove 'var:materialClassId' data property. Replace it by 'dcterms:identifier' in 'var:MaterialClass' class
 
-Remove unnecessary uri data property
++Remove 'var:hear' boolean data property. Replace it by 'var:PersonWithAuditoryCapabilities' class
++Remove 'var:speak' boolean data property. Replace it by 'var:PersonWithSpeechCapabilities' class
++Remove 'var:write' boolean data property. Replace it by 'var:PersonWithWritingCapabilities' class
++Remove 'var:writingunderstanding' boolean data property. Replace it by 'var:PersonWithWritingUnderstandingCapabilities' class
++Remove 'var:distinguishcolors' boolean data property. Replace it by 'var:PersonWithColourDistinguishingCapabilities' class
 
-Remove hear boolean data property. Replace it by 'PersonWithAuditoryCapabilities' class
-Remove speak boolean data property. Replace it by 'PersonWithSpeechCapabilities' class
-Remove write boolean data property. Replace it by 'PersonWithWritingCapabilities' class
-Remove writingunderstanding boolean data property. Replace it by 'PersonWithWritingUnderstandingCapabilities' class
-Remove distinguishcolors boolean data property. Replace it by PersonWithColourDistinguishingCapabilities
++Remove unnecessary 'var:uri' data property
